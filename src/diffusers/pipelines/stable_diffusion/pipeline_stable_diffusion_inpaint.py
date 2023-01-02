@@ -159,8 +159,8 @@ def prepare_mask_and_masked_image(image, mask):
     # print(np.uint8(masked_image*255).shape)
     # print(mask.shape)
     # # .reshape((512,512,3))
-    PIL.Image.fromarray(np.uint8((torch.squeeze(masked_image).permute(1, 2, 0)+1)*127.5)).save("photos/depth_woimage_cagla/masked_image.png")
-    PIL.Image.fromarray(np.uint8(torch.squeeze(masked_image).permute(1, 2, 0)*255)).save("photos/depth_woimage_cagla/masked_image.png")
+    # PIL.Image.fromarray(np.uint8((torch.squeeze(masked_image).permute(1, 2, 0)+1)*127.5)).save("photos/depth_woimage_cagla/masked_image.png")
+    # PIL.Image.fromarray(np.uint8(torch.squeeze(masked_image).permute(1, 2, 0)*255)).save("photos/depth_woimage_cagla/masked_image.png")
     # PIL.Image.fromarray(np.uint8(torch.squeeze(mask)*255)).save("photos/depth_woimage_cagla/mask_image.png")
 
     return mask, masked_image
